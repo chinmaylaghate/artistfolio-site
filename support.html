@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support — ArtistFolio</title>
+  <style>
+    :root {
+      --blue: #3B2BF0;
+      --text: #313540;
+      --secondary: #7C849B;
+      --bg: #FAFAFA;
+      --surface: #FFFFFF;
+      --border: #E8EAEF;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 16px;
+    }
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo {
+      width: 40px; height: 40px;
+      background: var(--blue);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: -0.5px;
+      flex-shrink: 0;
+    }
+    header h1 { font-size: 17px; font-weight: 600; }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    h2 { font-size: 26px; font-weight: 700; letter-spacing: -0.4px; margin-bottom: 8px; }
+    .sub { color: var(--secondary); font-size: 15px; margin-bottom: 40px; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    .card h3 { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
+    .card p { font-size: 15px; color: var(--secondary); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .faq { margin-top: 48px; }
+    .faq h2 { margin-bottom: 20px; }
+    details {
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+    details:first-of-type { border-top: 1px solid var(--border); }
+    summary {
+      font-weight: 500;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    summary::after { content: "+"; font-size: 20px; color: var(--secondary); }
+    details[open] summary::after { content: "−"; }
+    details p { margin-top: 10px; color: var(--secondary); font-size: 15px; }
+    footer {
+      text-align: center;
+      color: var(--secondary);
+      font-size: 13px;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0F0F12;
+        --surface: #1A1A1F;
+        --text: #E8E9EE;
+        --secondary: #9099B0;
+        --border: #2A2A32;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="/" style="display:contents;color:inherit;text-decoration:none"><div class="logo">AF</div>
+  <h1>ArtistFolio</h1></a>
+</header>
+
+<main>
+  <h2>Support</h2>
+  <p class="sub">We're here to help. Reach out or browse the FAQ below.</p>
+
+  <div class="card">
+    <h3>Email Support</h3>
+    <p>For account issues, content reports, or anything else, email us and we'll get back to you within 48 hours.</p>
+    <a href="mailto:artistfolio.app@gmail.com">artistfolio.app@gmail.com</a>
+  </div>
+
+  <div class="card">
+    <h3>Report Artwork or a User</h3>
+    <p>To report objectionable content or an abusive user, tap the ··· menu on any artwork or profile inside the app and choose "Report".</p>
+  </div>
+
+  <div class="card">
+    <h3>Delete Your Account</h3>
+    <p>Open the <strong>Profile</strong> tab in the app and tap <strong>Delete Account</strong>. This permanently removes your profile, artworks, and private library.</p>
+  </div>
+
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+      <summary>Do I need an account to use ArtistFolio?</summary>
+      <p>No. You can browse all artwork without signing in. An iCloud account is only required to save art, follow artists, or publish your work.</p>
+    </details>
+
+    <details>
+      <summary>How do I buy artwork?</summary>
+      <p>ArtistFolio does not process payments. Tap the contact button on any artwork or artist profile to reach the artist directly and arrange a purchase.</p>
+    </details>
+
+    <details>
+      <summary>Why can't I see the AR preview?</summary>
+      <p>AR preview requires a device with world-tracking AR support running iOS 17 or later. On unsupported devices, the button is hidden.</p>
+    </details>
+
+    <details>
+      <summary>I published artwork but it's not showing in the feed.</summary>
+      <p>New listings can take a minute or two to appear in the public feed. Pull to refresh the Home tab. If it still doesn't appear after a few minutes, check your Studio to confirm it saved correctly.</p>
+    </details>
+
+    <details>
+      <summary>How do I remove a saved artwork or unfollow an artist?</summary>
+      <p>In the Saved tab, swipe left on any saved item to remove it. On an artist's profile, tap the Following button to unfollow.</p>
+    </details>
+
+    <details>
+      <summary>Is my data private?</summary>
+      <p>Yes. ArtistFolio stores private data (your saved art, follows) in your personal iCloud database — only you can see it. See our <a href="privacy.html">Privacy Policy</a> for full details.</p>
+    </details>
+  </section>
+</main>
+
+<footer>
+  © 2026 ArtistFolio &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="mailto:artistfolio.app@gmail.com">artistfolio.app@gmail.com</a>
+</footer>
+
+</body>
+</html>

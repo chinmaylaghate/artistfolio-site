@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — ArtistFolio</title>
+  <style>
+    :root {
+      --blue: #3B2BF0;
+      --text: #313540;
+      --secondary: #7C849B;
+      --bg: #FAFAFA;
+      --surface: #FFFFFF;
+      --border: #E8EAEF;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 16px;
+    }
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo {
+      width: 40px; height: 40px;
+      background: var(--blue);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: -0.5px;
+      flex-shrink: 0;
+    }
+    header h1 { font-size: 17px; font-weight: 600; }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    h2 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+      margin-bottom: 8px;
+    }
+    .updated {
+      color: var(--secondary);
+      font-size: 14px;
+      margin-bottom: 36px;
+    }
+    section { margin-bottom: 36px; }
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--secondary);
+      margin-bottom: 10px;
+    }
+    p { margin-bottom: 12px; }
+    ul { margin: 10px 0 12px 20px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight {
+      background: #EEF3FC;
+      border-left: 3px solid var(--blue);
+      border-radius: 4px;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+    footer {
+      text-align: center;
+      color: var(--secondary);
+      font-size: 13px;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0F0F12;
+        --surface: #1A1A1F;
+        --text: #E8E9EE;
+        --secondary: #9099B0;
+        --border: #2A2A32;
+      }
+      .highlight { background: #1C2540; }
+      .logo { background: #3B2BF0; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="/" style="display:contents;color:inherit;text-decoration:none"><div class="logo">AF</div>
+  <h1>ArtistFolio</h1></a>
+</header>
+
+<main>
+  <h2>Privacy Policy</h2>
+  <p class="updated">Last updated: November 2026</p>
+
+  <div class="highlight">
+    Short version: ArtistFolio does not track you, sell your data, or run ads. Your personal collection is stored in your private iCloud database. The only public information is what you choose to share on your profile.
+  </div>
+
+  <section>
+    <h3>Who We Are</h3>
+    <p>ArtistFolio is an art discovery and portfolio app that connects independent artists with collectors. The app is operated by ArtistFolio.</p>
+  </section>
+
+  <section>
+    <h3>What We Collect</h3>
+    <p>ArtistFolio collects only what is necessary to operate the app. If you create an account, we store:</p>
+    <ul>
+      <li><strong>Your name</strong> — displayed on your public profile</li>
+      <li><strong>Your role</strong> — artist or collector</li>
+      <li><strong>Contact email</strong> (required for artists) — displayed publicly so collectors can reach you</li>
+      <li><strong>Website and Instagram handle</strong> (optional) — displayed publicly so collectors can reach you</li>
+      <li><strong>Bio and location</strong> (optional) — the text you add, displayed on your public profile</li>
+      <li><strong>Profile photo</strong> (optional) — displayed on your public profile</li>
+      <li><strong>Artwork listings</strong> (artists only) — title, description, price, images, and dimensions you publish</li>
+      <li><strong>iCloud user identifier</strong> — an app-specific CloudKit record ID that links your content to your account</li>
+      <li><strong>Reports you submit</strong> — the reported artwork or artist, the reason, any note you write, and the account that submitted it</li>
+    </ul>
+    <p>If you use the app as a guest (no iCloud sign-in), we collect nothing.</p>
+  </section>
+
+  <section>
+    <h3>How We Store It</h3>
+    <p>ArtistFolio uses <strong>Apple CloudKit</strong> as its database. This means:</p>
+    <ul>
+      <li>Your private data (saved artworks, followed artists, blocked artists) is stored in your personal iCloud database — only you can see it</li>
+      <li>Your public data (profile, published artworks) is stored in the shared CloudKit public database</li>
+      <li>ArtistFolio has read access to public records but cannot access your private iCloud containers</li>
+    </ul>
+    <p>We do not operate our own servers for user data. Apple's iCloud infrastructure handles storage and security.</p>
+  </section>
+
+  <section>
+    <h3>Augmented Reality & Camera</h3>
+    <p>The AR preview feature uses your device's camera to display artwork on your walls. Camera frames are processed entirely on-device using ARKit and are never sent to ArtistFolio or any third party.</p>
+  </section>
+
+  <section>
+    <h3>Photos</h3>
+    <p>When you upload artwork or a profile photo, you select images using the iOS system photo picker. ArtistFolio reads only the images you explicitly select; it does not access your full photo library.</p>
+    <p>Uploaded images are stored in CloudKit and are publicly visible once published.</p>
+  </section>
+
+  <section>
+    <h3>Tracking & Advertising</h3>
+    <p>ArtistFolio does not track you across apps or websites. We do not run ads. We do not sell, rent, or share your data with third-party advertisers or data brokers.</p>
+  </section>
+
+  <section>
+    <h3>Third-Party Services</h3>
+    <p>ArtistFolio uses no third-party analytics, crash-reporting, or advertising SDKs. The only external service involved is Apple's CloudKit infrastructure, which is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.</p>
+  </section>
+
+  <section>
+    <h3>Payments</h3>
+    <p>ArtistFolio does not process payments. Any transaction between an artist and a collector is arranged directly between them, outside the app. ArtistFolio has no access to payment details.</p>
+  </section>
+
+  <section>
+    <h3>User-Generated Content</h3>
+    <p>Artists publish artwork and profile information voluntarily. Anything marked as public is visible to all users. You can delete your account at any time from the Profile tab, which permanently removes your profile, artworks, and private library. Safety-related reports you submitted may be retained for moderation purposes.</p>
+  </section>
+
+  <section>
+    <h3>Children's Privacy</h3>
+    <p>ArtistFolio is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it.</p>
+  </section>
+
+  <section>
+    <h3>Your Rights</h3>
+    <p>You can:</p>
+    <ul>
+      <li>Edit or delete your profile at any time within the app</li>
+      <li>Delete your account from the Profile tab by tapping Delete Account</li>
+      <li>Browse the app as a guest without providing any personal information</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Changes to This Policy</h3>
+    <p>We may update this policy as the app evolves. Material changes will be noted with an updated date at the top of this page.</p>
+  </section>
+
+  <section>
+    <h3>Contact</h3>
+    <p>Questions about this policy? Email us at <a href="mailto:artistfolio.app@gmail.com">artistfolio.app@gmail.com</a>.</p>
+  </section>
+</main>
+
+<footer>
+  © 2026 ArtistFolio &nbsp;·&nbsp; <a href="mailto:artistfolio.app@gmail.com">artistfolio.app@gmail.com</a>
+</footer>
+
+</body>
+</html>
