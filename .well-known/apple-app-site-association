@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["346UJ76346.com.artistfolio.app"],
+        "components": [
+          { "/": "/a/*", "comment": "Artwork links" },
+          { "/": "/artist/*", "comment": "Artist profile links" }
+        ]
+      }
+    ]
+  }
+}

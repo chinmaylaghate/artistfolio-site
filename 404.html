@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ArtistFolio</title>
+<meta name="description" content="Discover and collect original art on ArtistFolio.">
+<link rel="icon" href="/img/apple-touch-icon.png" type="image/png">
+<meta name="apple-itunes-app" content="app-id=6838094249">
+<style>
+  :root { --blue: #3B2BF0; --text: #111; --muted: #5F5F68; --bg: #fff; --fill: rgba(118,118,128,.12); }
+  @media (prefers-color-scheme: dark) { :root { --text: #f5f5f7; --muted: #AEAEB8; --bg: #000; --blue: #8B7FFF; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--bg); color: var(--text);
+         font: 17px/1.5 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 420px; padding: 32px 24px; text-align: center; }
+  img.icon { width: 88px; height: 88px; border-radius: 20px; }
+  h1 { font-size: 28px; margin: 20px 0 8px; letter-spacing: -0.02em; }
+  p { color: var(--muted); margin: 0 0 24px; }
+  a.button { display: inline-block; background: var(--blue); color: #fff; text-decoration: none; font-weight: 600;
+             padding: 14px 28px; border-radius: 999px; }
+  a.secondary { display: block; margin-top: 16px; color: var(--blue); text-decoration: none; }
+</style>
+</head>
+<body>
+<main>
+  <img class="icon" src="/img/apple-touch-icon.png" alt="">
+  <h1 id="title">Page not found</h1>
+  <p id="body">This page doesn't exist. You can still discover original art on ArtistFolio.</p>
+  <a class="button" href="https://apps.apple.com/app/artistfolio/id6838094249">Get ArtistFolio on the App Store</a>
+  <a class="secondary" href="/">Visit artistfolioapp.com</a>
+</main>
+<script>
+  // Shared links (/a/<id>, /artist/<id>) open the app directly when it is installed.
+  // Without the app, iOS loads this page instead, so explain what the link was for.
+  (function () {
+    var parts = location.pathname.split("/").filter(Boolean);
+    var title = document.getElementById("title");
+    var body = document.getElementById("body");
+    if (parts[0] === "a" && parts.length === 2) {
+      title.textContent = "View this artwork in ArtistFolio";
+      body.textContent = "This piece is listed on ArtistFolio. Get the free app to see it, preview it on your wall in AR, and contact the artist.";
+      document.title = "Artwork on ArtistFolio";
+    } else if (parts[0] === "artist" && parts.length === 2) {
+      title.textContent = "See this artist on ArtistFolio";
+      body.textContent = "Get the free app to browse their original work and contact them directly.";
+      document.title = "Artist on ArtistFolio";
+    }
+  })();
+</script>
+</body>
+</html>

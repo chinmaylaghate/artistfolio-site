@@ -78,6 +78,9 @@
     summary::after { content: "+"; font-size: 20px; color: var(--secondary); }
     details[open] summary::after { content: "−"; }
     details p { margin-top: 10px; color: var(--secondary); font-size: 15px; }
+    details ul { margin: 10px 0 0; padding-left: 20px; color: var(--secondary); font-size: 15px; }
+    details li + li { margin-top: 4px; }
+    #care > p { color: var(--secondary); font-size: 15px; margin-bottom: 16px; }
     footer {
       text-align: center;
       color: var(--secondary);
@@ -122,6 +125,51 @@
     <h3>Delete Your Account</h3>
     <p>Open the <strong>Profile</strong> tab in the app and tap <strong>Delete Account</strong>. This permanently removes your profile, artworks, and private library.</p>
   </div>
+
+  <section class="faq" id="care">
+    <h2>Caring for Your Artwork</h2>
+    <p>General advice for looking after original art. If the artist gave their own care note, follow that first.</p>
+    <details>
+      <summary>Oil on Canvas</summary>
+      <ul><li>Hang out of direct sunlight to keep colours bright.</li><li>Dust with a soft, dry brush. Avoid cloths, water and sprays.</li><li>Keep away from radiators, fireplaces and damp walls.</li><li>Lift by the frame or stretcher, never the painted surface.</li></ul>
+    </details>
+    <details>
+      <summary>Acrylic</summary>
+      <ul><li>Hang out of direct sunlight to keep colours bright.</li><li>Dust with a soft, dry brush. No cloths or sprays.</li><li>Keep away from damp walls, kitchens and bathrooms.</li><li>Lift by the frame or stretcher, not the painted surface.</li></ul>
+    </details>
+    <details>
+      <summary>Watercolor</summary>
+      <ul><li>Keep out of direct sunlight; watercolours fade fastest.</li><li>Frame behind UV-filtering glass with an acid-free mount.</li><li>Hang away from humidity to stop the paper rippling.</li><li>Handle unframed works by the edges with clean, dry hands.</li></ul>
+    </details>
+    <details>
+      <summary>Pastel</summary>
+      <ul><li>Keep framed under glass with a spacer so nothing touches the surface.</li><li>Never touch or brush the surface; pastel smudges easily.</li><li>Carry and store it flat and upright, without knocks.</li><li>Hang out of direct sunlight and away from damp.</li></ul>
+    </details>
+    <details>
+      <summary>Digital</summary>
+      <ul><li>Hang out of direct sunlight to stop the print fading.</li><li>Frame behind UV-filtering glass for the longest life.</li><li>Keep away from moisture and steam.</li><li>Handle unframed prints by the edges, ideally with cotton gloves.</li></ul>
+    </details>
+    <details>
+      <summary>Mixed Media</summary>
+      <ul><li>Hang out of direct sunlight to protect every layer.</li><li>Dust gently with a soft, dry brush. No liquids.</li><li>Keep temperature and humidity steady so layers stay bonded.</li><li>Hold by the edges or frame; raised parts can be fragile.</li></ul>
+    </details>
+    <details>
+      <summary>Sculpture</summary>
+      <ul><li>Place on a stable, level surface away from busy walkways.</li><li>Dust with a soft brush or dry microfibre cloth.</li><li>Avoid water, polish and cleaning products unless the artist advises.</li><li>Lift from the base with both hands, never by thin parts.</li></ul>
+    </details>
+    <details>
+      <summary>Photography</summary>
+      <ul><li>Hang out of direct sunlight to prevent fading.</li><li>Frame behind UV-filtering glass with an acid-free mount.</li><li>Keep away from humidity and steam.</li><li>Hold prints by the edges; fingerprints mark the surface.</li></ul>
+    </details>
+    <details>
+      <summary>Printmaking</summary>
+      <ul><li>Keep out of direct sunlight to protect the inks and paper.</li><li>Frame with acid-free mounts and UV-filtering glass.</li><li>Hang away from damp to prevent foxing and rippling.</li><li>Handle unframed prints by the margins with clean hands.</li></ul>
+    </details>
+    <details>
+      <summary>Drawing</summary>
+      <ul><li>Keep framed under glass; graphite and charcoal smudge.</li><li>Hang out of direct sunlight to stop the paper yellowing.</li><li>Keep away from humidity and damp walls.</li><li>Never touch the drawn surface; hold by the edges.</li></ul>
+    </details>
+  </section>
 
   <section class="faq">
     <h2>Frequently Asked Questions</h2>
